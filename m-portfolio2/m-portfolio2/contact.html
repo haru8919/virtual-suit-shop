@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>タイトル</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:card" content="summary" />
+    <!-- ファビコン -->
+    <link rel="icon" href="/images/favicon (6).ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@300;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/izmir.min.css" />
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+    <script src="http://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header js-header change-color">
+      <div class="header__inner">
+        <h1 class="header__logo"><img class="header__l-img" src="/images/MiyaPort..svg" alt="ヘッダーロゴ" /></h1>
+        <nav class="header__nav md-none">
+          <ul class="header__items">
+            <li class="header__item">
+              <a href="index.html#about" class="header__link">About</a>
+            </li>
+
+            <li class="header__item">
+              <a href="index.html#service" class="header__link">Service</a>
+            </li>
+
+            <li class="header__item">
+              <a href="index.html#news" class="header__link">News</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="contact.html" class="header__contact btn md-none">Contact</a>
+      </div>
+      <div class="hamburger js-hamburger md-show">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- ドロワーメニュー -->
+      <div class="drawer-menu js-drawer">
+        <div class="drawer-menu__inner">
+          <ul class="drawer-menu__items">
+            <li class="drawer-menu__item">
+              <a href="/index.html" class="drawer-menu__link">About</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="/index.html" class="drawer-menu__link">Service</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="/index.html" class="drawer-menu__link">News</a>
+            </li>
+          </ul>
+          <a href="/index.html" class="drawer-menu__contact contact-btn">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!-- mv -->
+    <div id="contact-sub" class="sub-mv">
+      <div class="sub-mv__wrapper">
+        <div class="sub-mv__inner">
+          <picture>
+            <source srcset="/images/contact-fv-pc.jpg" media="(min-width:1024)" />
+            <img src="/images/contact-fv-sp.jpg" alt="男性がスーツの生地を仕立てている様子" class="sub-mv__img" />
+          </picture>
+          <h2 class="sub-mv__title">Contact</h2>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="contact-page">
+        <div class="contact-page__inner">
+          <div class="contact-page__title">
+            <p class="contact-page__text">
+              当店へのお問い合わせは下記フォームより受け付けております。<br />
+              担当者が確認後、折り返しご連絡させていただきます。
+            </p>
+          </div>
+          <form action="" class="contact-form form" method="post">
+            <ul class="form__list">
+              <li class="form__item">
+                <dl class="form__labels">
+                  <dt class="form__label">
+                    <p class="form__label-text">お名前<span style="color: red">*</span></p>
+                  </dt>
+                  <dd class="form__input">
+                    <input type="text" class="form__input-text" name="お名前*" placeholder="仕立&emsp;一郎" />
+                  </dd>
+                </dl>
+              </li>
+              <li class="form__item">
+                <dl class="form__labels">
+                  <dt class="form__label">
+                    <p class="form__label-text">メールアドレス<span style="color: red">*</span></p>
+                  </dt>
+                  <dd class="form__input">
+                    <input type="email" class="form__input-text" name="メールアドレス*" placeholder="excitecode@suit.co.jp" />
+                  </dd>
+                </dl>
+              </li>
+              <li class="form__item">
+                <dl class="form__labels">
+                  <div class="form__input-group">
+                    <label for="inquiry-type" class="form__input-label">お問い合わせの種類<span style="color: red">*</span></label>
+                    <div class="form__input-radio-container">
+                      <!-- form__input-radioを包むコンテナを追加 -->
+                      <input type="radio" class="form__input-radio" name="dog-item" id="dog-food" value="ドッグフード" />
+                      <label for="dog-food" class="form__input-label">オーダーメイドスーツ</label>
+                      <input type="radio" class="form__input-radio" name="dog-item" id="dog-care" value="ドッグケア" />
+                      <label for="dog-care" class="form__input-label">スーツ以外のアイテム</label>
+                      <input type="radio" class="form__input-radio" name="dog-item" id="other" value="その他" />
+                      <label for="other" class="form__input-label">その他</label>
+                    </div>
+                  </div>
+                </dl>
+              </li>
+              <li class="form__item">
+                <dl class="form__labels-area">
+                  <dt class="form__label-textareas">
+                    <p class="form__label-textarea">お問い合わせ内容<span style="color: red">*</span></p>
+                  </dt>
+                  <dd class="form__input">
+                    <textarea name="お問い合わせ内容" class="textarea" placeholder="入力してください"></textarea>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+            <div class="form__btn">
+              <input class="btn-rounded btn btn-wide" type="submit" value="送信" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__copyright">&copy;ExciteCode&nbsp;all&nbsp;rights&nbsp;reserved</small>
+    </footer>
+  </body>
+</html>
